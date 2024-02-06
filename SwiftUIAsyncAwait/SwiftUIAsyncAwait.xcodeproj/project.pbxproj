@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F7D784392B72DFB400400C4B /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D784382B72DFB400400C4B /* WebService.swift */; };
+		F7D7843B2B72E0E500400C4B /* CurrentDateListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D7843A2B72E0E500400C4B /* CurrentDateListViewModel.swift */; };
 		F7D9A4442B72B60700D27501 /* SwiftUIAsyncAwaitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D9A4432B72B60700D27501 /* SwiftUIAsyncAwaitApp.swift */; };
 		F7D9A4462B72B60700D27501 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D9A4452B72B60700D27501 /* ContentView.swift */; };
 		F7D9A4482B72B60900D27501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D9A4472B72B60900D27501 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		F7D784382B72DFB400400C4B /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		F7D7843A2B72E0E500400C4B /* CurrentDateListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDateListViewModel.swift; sourceTree = "<group>"; };
 		F7D9A4402B72B60700D27501 /* SwiftUIAsyncAwait.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAsyncAwait.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D9A4432B72B60700D27501 /* SwiftUIAsyncAwaitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAsyncAwaitApp.swift; sourceTree = "<group>"; };
 		F7D9A4452B72B60700D27501 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				F7D9A4432B72B60700D27501 /* SwiftUIAsyncAwaitApp.swift */,
 				F7D9A4452B72B60700D27501 /* ContentView.swift */,
+				F7D7843A2B72E0E500400C4B /* CurrentDateListViewModel.swift */,
 				F7D784382B72DFB400400C4B /* WebService.swift */,
 				F7D9A4472B72B60900D27501 /* Assets.xcassets */,
 				F7D9A4492B72B60900D27501 /* Preview Content */,
@@ -142,6 +145,7 @@
 			files = (
 				F7D784392B72DFB400400C4B /* WebService.swift in Sources */,
 				F7D9A4462B72B60700D27501 /* ContentView.swift in Sources */,
+				F7D7843B2B72E0E500400C4B /* CurrentDateListViewModel.swift in Sources */,
 				F7D9A4442B72B60700D27501 /* SwiftUIAsyncAwaitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

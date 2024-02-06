@@ -10,7 +10,7 @@ import Foundation
 class WebService {
     
     // fuction must be async
-    private func getDate() async throws -> CurrentDate? {
+    func getDate() async throws -> CurrentDate? {
         
         guard let url = URL(string:
             "https://ember-sparkly-rule.glitch.me/current-date") else {
