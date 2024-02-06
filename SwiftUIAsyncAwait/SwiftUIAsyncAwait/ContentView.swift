@@ -7,15 +7,6 @@
 
 import SwiftUI
 
-struct CurrentDate: Decodable, Identifiable {
-    let id = UUID()
-    let date: String
-    
-    private enum CodingKeys: String, CodingKey {
-        case date = "date"
-    }
-}
-
 struct ContentView: View {
     
     @StateObject private var currentDateListVM = CurrentDateListViewModel()
