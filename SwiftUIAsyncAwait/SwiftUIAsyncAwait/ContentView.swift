@@ -7,8 +7,22 @@
 
 import SwiftUI
 
+
+
+
 struct ContentView: View {
     var body: some View {
+        NavigationView {
+            List(1...10, id: \.self) { index in
+                Text("\(index)")
+            }.listStyle(.inset)
+                .navigationTitle("Dates")
+                .navigationBarItems(trailing: Button(action: {
+                    // button action
+                }, label: {
+                    Image(systemName: "arrow.clockwise.circle")
+                }))
+        }
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
@@ -19,6 +33,8 @@ struct ContentView: View {
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
