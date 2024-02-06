@@ -18,22 +18,11 @@ struct CurrentDate: Decodable, Identifiable {
 
 struct ContentView: View {
     
-    @State private var currentDates: [CurrentDate] = []
-    
-    private func populateDates() async {
-        do {
-            guard let currentDate = try await getDate() else {
-                return
-            }
-            currentDates.append(currentDate)
-        } catch {
-            print(error.localizedDescription)
-        }
-    }
+    @StateObject private var currentDateListVM = CurrentDateListViewModel()
     
     var body: some View {
         NavigationView {
-            List(currentDates) { currentDate in
+            List(currentDateListVM.currentDates, id: \.id) { currentDate in
                 Text(currentDate.date)
             }.listStyle(.inset)
             .navigationTitle("Dates")
@@ -41,13 +30,14 @@ struct ContentView: View {
                 // button action
                 // async context
                 Task.init {
-                    await populateDates()
+                    await currentDateListVM.populateDates()
                 }
             }, label: {
                 Image(systemName: "arrow.clockwise.circle")
             }))
+            // task modifier
             .task {
-                await populateDates()
+                await currentDateListVM.populateDates()
             }
         }
     }
