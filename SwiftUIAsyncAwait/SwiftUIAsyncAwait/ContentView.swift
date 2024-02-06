@@ -7,8 +7,14 @@
 
 import SwiftUI
 
-
-
+struct CurrentDate: Decodable, Identifiable {
+    let id = UUID()
+    let date: String
+    
+    private enum CodingKeys: String, CodingKey {
+        case date = "date"
+    }
+}
 
 struct ContentView: View {
     var body: some View {
